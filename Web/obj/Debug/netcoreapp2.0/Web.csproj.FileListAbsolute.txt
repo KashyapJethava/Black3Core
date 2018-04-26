@@ -10,3 +10,15 @@ D:\Black3\Web\Web\obj\Debug\netcoreapp2.0\Web.AssemblyInfoInputs.cache
 D:\Black3\Web\Web\obj\Debug\netcoreapp2.0\Web.AssemblyInfo.cs
 D:\Black3\Web\Web\obj\Debug\netcoreapp2.0\Web.dll
 D:\Black3\Web\Web\obj\Debug\netcoreapp2.0\Web.pdb
+D:\Black3\Black3Core\Web\bin\Debug\netcoreapp2.0\Web.deps.json
+D:\Black3\Black3Core\Web\bin\Debug\netcoreapp2.0\Web.runtimeconfig.json
+D:\Black3\Black3Core\Web\bin\Debug\netcoreapp2.0\Web.runtimeconfig.dev.json
+D:\Black3\Black3Core\Web\bin\Debug\netcoreapp2.0\Web.dll
+D:\Black3\Black3Core\Web\bin\Debug\netcoreapp2.0\Web.pdb
+D:\Black3\Black3Core\Web\obj\Debug\netcoreapp2.0\Web.csprojResolveAssemblyReference.cache
+D:\Black3\Black3Core\Web\obj\Debug\netcoreapp2.0\Web.csproj.CoreCompileInputs.cache
+D:\Black3\Black3Core\Web\obj\Debug\netcoreapp2.0\Web.AssemblyInfoInputs.cache
+D:\Black3\Black3Core\Web\obj\Debug\netcoreapp2.0\Web.AssemblyInfo.cs
+D:\Black3\Black3Core\Web\obj\Debug\netcoreapp2.0\Web.dll
+D:\Black3\Black3Core\Web\obj\Debug\netcoreapp2.0\Web.pdb
+D:\Black3\Black3Core\Web\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs

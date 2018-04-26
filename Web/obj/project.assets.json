@@ -13121,6 +13121,7 @@
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 2.0.2",
+      "Microsoft.Extensions.Configuration.UserSecrets >= 2.0.1",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.3"
     ]
@@ -13132,11 +13133,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Black3\\Web\\Web\\Web.csproj",
+      "projectUniqueName": "D:\\Black3\\Black3Core\\Web\\Web.csproj",
       "projectName": "Web",
-      "projectPath": "D:\\Black3\\Web\\Web\\Web.csproj",
+      "projectPath": "D:\\Black3\\Black3Core\\Web\\Web.csproj",
       "packagesPath": "C:\\Users\\kasjetha\\.nuget\\packages\\",
-      "outputPath": "D:\\Black3\\Web\\Web\\obj\\",
+      "outputPath": "D:\\Black3\\Black3Core\\Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13174,6 +13175,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.2, )"
+          },
+          "Microsoft.Extensions.Configuration.UserSecrets": {
+            "target": "Package",
+            "version": "[2.0.1, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",

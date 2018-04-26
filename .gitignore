@@ -1,0 +1,9 @@
+
+.vs/Web/v15/.suo
+*.dll
+*.dll
+.vs/config/applicationhost.config
+.vs/Web/v15/Server/sqlite3/db.lock
+.vs/Web/v15/Server/sqlite3/storage.ide
+.vs/Web/v15/Server/sqlite3/storage.ide-shm
+.vs/Web/v15/Server/sqlite3/storage.ide-wal
