@@ -7,3 +7,8 @@
 .vs/Web/v15/Server/sqlite3/storage.ide
 .vs/Web/v15/Server/sqlite3/storage.ide-shm
 .vs/Web/v15/Server/sqlite3/storage.ide-wal
+*.dll
+*.pdb
+*.pdb
+*.dll
+*.pdb

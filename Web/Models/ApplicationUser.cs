@@ -9,5 +9,10 @@ namespace Web.Models
     // Add profile data for application users by adding properties to the ApplicationUser class
     public class ApplicationUser : IdentityUser
     {
+        public string FirstName { get; set; }
+        public string Surname { get; set; }
+        public string Picture{ get; set; }
+        public string Gender { get; set; }
+        public string DOB { get; set; }
     }
 }

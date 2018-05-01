@@ -249,6 +249,7 @@ namespace Web.Controllers
             _logger.LogInformation("User logged out.");
             return RedirectToAction(nameof(HomeController.Index), "Home");
         }
+        
 
         [HttpPost]
         [AllowAnonymous]
@@ -275,7 +276,7 @@ namespace Web.Controllers
             {
                 return RedirectToAction(nameof(Login));
             }
-
+            
             // Sign in the user with this external login provider if the user already has a login.
             var result = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false, bypassTwoFactor: true);
             if (result.Succeeded)
@@ -293,7 +294,13 @@ namespace Web.Controllers
                 ViewData["ReturnUrl"] = returnUrl;
                 ViewData["LoginProvider"] = info.LoginProvider;
                 var email = info.Principal.FindFirstValue(ClaimTypes.Email);
-                return View("ExternalLogin", new ExternalLoginViewModel { Email = email });
+                var firstName = info.Principal.FindFirstValue(ClaimTypes.Name);
+                var lastName = info.Principal.FindFirstValue(ClaimTypes.Surname);
+                var dateOfBirth = info.Principal.FindFirstValue(ClaimTypes.DateOfBirth);
+                var gender = info.Principal.FindFirstValue(ClaimTypes.Gender);
+                var identifier = info.Principal.FindFirstValue(ClaimTypes.NameIdentifier);
+                var picture = $"https://graph.facebook.com/" + identifier + "/picture?type=large";
+                return View("ExternalLogin", new ExternalLoginViewModel { Email = email, FirstName = firstName, DOB = dateOfBirth, Gender = gender, Surname = lastName, Picture = picture });
             }
         }
 
@@ -310,7 +317,7 @@ namespace Web.Controllers
                 {
                     throw new ApplicationException("Error loading external login information during confirmation.");
                 }
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, FirstName = model.FirstName, Surname = model.Surname, DOB = model.DOB, Gender = model.Gender, Picture = model.Picture };
                 var result = await _userManager.CreateAsync(user);
                 if (result.Succeeded)
                 {

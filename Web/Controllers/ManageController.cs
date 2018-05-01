@@ -491,6 +491,21 @@ namespace Web.Controllers
             return View(nameof(ShowRecoveryCodes), model);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteUser(ApplicationUser user)
+        {
+            var result = await _userManager.DeleteAsync(user);
+            if (result.Succeeded)
+            {
+                await _signInManager.SignOutAsync();
+                _logger.LogInformation("User logged out.");
+                return RedirectToAction(nameof(HomeController.Index), "Home");
+            }
+            AddErrors(result);
+            return View();
+        }
+
         #region Helpers
 
         private void AddErrors(IdentityResult result)

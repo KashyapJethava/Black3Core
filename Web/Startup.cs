@@ -37,6 +37,14 @@ namespace Web
             {
                 facebookOptions.AppId = Configuration["Authentication:Facebook:AppId"];
                 facebookOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
+                facebookOptions.SaveTokens = true;
+                facebookOptions.Scope.Add("user_birthday");
+                facebookOptions.Scope.Add("public_profile");
+                facebookOptions.Fields.Add("birthday");
+                facebookOptions.Fields.Add("picture");
+                facebookOptions.Fields.Add("name");
+                facebookOptions.Fields.Add("email");
+                facebookOptions.Fields.Add("gender");
             });
 
             // Add application services.
